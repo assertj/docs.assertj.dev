@@ -1,0 +1,3 @@
+= AssertJ Documentation
+
+Welcome to the documentation of https://assertj.github.io/doc/[AssertJ], the fluent assertions library for Java.
