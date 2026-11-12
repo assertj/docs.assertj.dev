@@ -1,0 +1,45 @@
+antora:
+  extensions:
+    - require: './extensions/collector-cache.js'
+    - '@antora/collector-extension'
+    - require: '@antora/lunr-extension'
+      index_by_heading: true
+    - require: '@springio/antora-xref-extension'
+site:
+  title: AssertJ Documentation
+  url: https://docs.assertj.dev
+  robots: allow
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: home
+asciidoc:
+  sourcemap: true
+  extensions:
+    - '@asciidoctor/tabs'
+  attributes:
+    page-pagination: ''
+    idprefix: '@'
+    idseparator: '-@'
+    table-caption: false
+    table-frame: 'none@'
+    table-grid: 'rows@'
+    table-stripes: 'odd@'
+    figure-caption: false
+    example-caption: false
+    listing-caption: false
+    hide-uri-scheme: '@'
+    attribute-missing: warn
+    tabs-sync-option: ''
+runtime:
+  log:
+    failure_level: warn
+urls:
+  redirect_facility: static
+  latest_version_segment: current
+  latest_prerelease_version_segment: snapshot
+  latest_version_segment_strategy: replace
+ui:
+  bundle:
+    url: https://github.com/assertj/antora-ui/releases/download/20261112-181749/ui-bundle.zip
