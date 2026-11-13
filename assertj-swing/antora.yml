@@ -1,0 +1,8 @@
+name: assertj-swing
+title: AssertJ Swing
+version: ~
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    assertj-swing-github: 'https://github.com/assertj/assertj-swing'
