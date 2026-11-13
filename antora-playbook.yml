@@ -14,6 +14,14 @@ content:
     - url: .
       branches: HEAD
       start_path: home
+    - url: https://github.com/marcphilipp/assertj
+      branches:
+        - antora-3.x
+      start_paths: docs/assertj-*
+    - url: https://github.com/marcphilipp/assertj-db
+      branches:
+        - antora
+      start_paths: docs
 asciidoc:
   sourcemap: true
   extensions:
