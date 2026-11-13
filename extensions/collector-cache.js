@@ -30,7 +30,8 @@ module.exports.register = function ({ playbook, config = {} }) {
         const repositoryCacheDirName = generateWorktreeFolderName({ url, gitdir, worktree })
         const baseCollectorCacheCacheDir = ospath.join(baseCacheDir, 'collector-cache', repositoryCacheDirName)
         const collectorConfig = descriptor?.ext?.collector
-        if (collectorConfig !== undefined && !excludes.includes(refname)) {
+        // a local worktree has no commit hash to key the cache on, so it is built uncached
+        if (collectorConfig !== undefined && refhash !== undefined && !excludes.includes(refname)) {
           const shortref = refhash.slice(0, 7)
           const cacheDirName = `${shortref}-${refname}`
           const cacheDir = ospath.join(baseCollectorCacheCacheDir, cacheDirName)
