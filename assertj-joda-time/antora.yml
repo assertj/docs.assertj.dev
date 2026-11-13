@@ -1,0 +1,11 @@
+name: assertj-joda-time
+title: AssertJ Joda Time
+version: ~
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    assertj-joda-time-version: '2.2.0'
+    assertj-core-javadoc: 'https://www.javadoc.io/doc/org.assertj/assertj-core/3.27.7'
+    assertj-joda-time-javadoc: 'https://www.javadoc.io/doc/org.assertj/assertj-joda-time/2.2.0'
+    assertj-examples-base-package: 'https://github.com/assertj/assertj-examples/blob/main/assertions-examples/src/test/java/org/assertj/examples'
