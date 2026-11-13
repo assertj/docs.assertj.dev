@@ -6,7 +6,7 @@ antora:
       index_by_heading: true
     - require: '@springio/antora-xref-extension'
 site:
-  title: AssertJ Documentation
+  title: AssertJ Docs
   url: https://docs.assertj.dev
   robots: allow
 content:
