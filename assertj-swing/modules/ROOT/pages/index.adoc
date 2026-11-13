@@ -1,0 +1,30 @@
+= Release Notes
+
+NOTE: AssertJ Swing would not exist without its contributors, you can find them all {assertj-swing-github}/graphs/contributors[directly on GitHub].
+
+Older release notes can be found in the old site: https://joel-costigliola.github.io/assertj/assertj-swing-news.html, this is important to be aware of breaking changes if you are migrating from an old version.
+
+[[v3-17-0-release-notes]]
+== AssertJ Swing 3.17.0
+
+Release date: 2020-09-13
+
+[[v3.17.0-contributors]]
+[.release-note-category]#icon:user[] Contributors#
+
+Thanks to all the contributors of this release: diba1013, Stefano Cordio and Edwin Stang.
+
+[[v3.17.0-breaking-changes]]
+[.release-note-category]#icon:exclamation-triangle[] Breaking changes#
+
+* Change of AssertJ Core from 3.11.1 to 3.17.0
+
+[[v3.17.0-improvements]]
+[.release-note-category]#icon:arrow-circle-up[] Improvements#
+
+* Allow exceptions to be thrown for smaller test-code footprint.
+
+[[v3.17.0-fixed]]
+[.release-note-category]#icon:wrench[] Fixed#
+
+* Fix: NPE on invoking JFrames with tray within AssertJSwingJUnitTestCase. (Edwin Stang)

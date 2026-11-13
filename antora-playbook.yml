@@ -13,7 +13,10 @@ content:
   sources:
     - url: .
       branches: HEAD
-      start_path: home
+      start_paths:
+        - home
+        - assertj-joda-time
+        - assertj-swing
     - url: https://github.com/marcphilipp/assertj
       branches:
         - antora-3.x
