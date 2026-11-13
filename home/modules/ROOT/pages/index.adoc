@@ -1,3 +1,10 @@
-= AssertJ Documentation
+= Fluent assertions for Java and the JVM
+:page-layout: home
+// Tile descriptions of the home layout: page-<component name>
+:page-assertj-core: Assertions for JDK types like collections, strings, dates, streams and more.
+:page-assertj-db: Assertions for relational data: tables, requests and changes.
+:page-assertj-guava: Assertions for Google Guava types like Multimap, Optional, RangeSet and Table.
+:page-assertj-joda-time: Assertions for Joda Time date and time types.
+:page-assertj-swing: Assertions and fixtures for testing Swing GUIs.
 
-Welcome to the documentation of https://assertj.github.io/doc/[AssertJ], the fluent assertions library for Java.
+Write more readable, maintainable tests with a rich and intuitive assertion API, and an IDE-friendly experience.
