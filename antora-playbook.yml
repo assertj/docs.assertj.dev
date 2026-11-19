@@ -27,8 +27,6 @@ content:
       start_paths: src/docs/antora
 asciidoc:
   sourcemap: true
-  extensions:
-    - '@asciidoctor/tabs'
   attributes:
     page-pagination: ''
     idprefix: '@'
@@ -42,7 +40,6 @@ asciidoc:
     listing-caption: false
     hide-uri-scheme: '@'
     attribute-missing: warn
-    tabs-sync-option: ''
 runtime:
   log:
     failure_level: warn
