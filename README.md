@@ -4,14 +4,12 @@ This branch contains the Antora project for building AssertJ's documentation sit
 
 ## Prerequisites
 
-It requires Node.js (for Antora) and Ruby (for asciidoctor.pdf).
-
+Antora requires Node.js.
 A `.tool-versions` file can be used with `asdf` or `mise`:
 
 ```
 asdf install # or mise install
 npm install
-bundle install
 ```
 
 ## Building
