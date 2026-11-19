@@ -26,14 +26,15 @@ module.exports.register = function ({ playbook, config = {} }) {
     const baseCacheDir = getBaseCacheDir(getUserCacheDir, playbook)
     for (const { origins } of contentAggregate) {
       for (const origin of origins) {
-        const { url, gitdir, refhash, worktree, descriptor, refname } = origin
+        const { url, gitdir, refhash, worktree, descriptor, refname, startPath } = origin
         const repositoryCacheDirName = generateWorktreeFolderName({ url, gitdir, worktree })
         const baseCollectorCacheCacheDir = ospath.join(baseCacheDir, 'collector-cache', repositoryCacheDirName)
         const collectorConfig = descriptor?.ext?.collector
         // a local worktree has no commit hash to key the cache on, so it is built uncached
         if (collectorConfig !== undefined && refhash !== undefined && !excludes.includes(refname)) {
           const shortref = refhash.slice(0, 7)
-          const cacheDirName = `${shortref}-${refname}`
+          // several start paths can share a ref, so each needs its own cache entry
+          const cacheDirName = [shortref, refname, startPath?.replace(/\//g, '-')].filter(Boolean).join('-')
           const cacheDir = ospath.join(baseCollectorCacheCacheDir, cacheDirName)
           const cacheKey = `collector-cache-${repositoryCacheDirName}-${cacheDirName}`
           if (!fs.existsSync(baseCollectorCacheCacheDir)) {
