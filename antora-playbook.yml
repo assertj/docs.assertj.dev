@@ -19,7 +19,7 @@ content:
         - assertj-swing
     - url: https://github.com/marcphilipp/assertj
       branches:
-        - antora-3.x
+        - antora-3.x-javadoc
       start_paths: assertj-*/src/docs/antora
     - url: https://github.com/marcphilipp/assertj-db
       branches:
