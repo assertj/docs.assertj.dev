@@ -4,6 +4,7 @@ antora:
     - '@antora/collector-extension'
     - require: '@antora/lunr-extension'
       index_by_heading: true
+    - '@springio/antora-extensions/root-attachments-extension'
     - require: '@springio/antora-xref-extension'
 site:
   title: AssertJ Docs
