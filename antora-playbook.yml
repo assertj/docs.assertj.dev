@@ -1,5 +1,7 @@
 antora:
   extensions:
+    # must come before the collector so that dropped refs are never built
+    - require: './extensions/latest-patch.js'
     - require: './extensions/collector-cache.js'
     - '@antora/collector-extension'
     - require: '@antora/lunr-extension'
@@ -46,9 +48,6 @@ runtime:
     failure_level: warn
 urls:
   redirect_facility: static
-  latest_version_segment: current
-  latest_prerelease_version_segment: snapshot
-  latest_version_segment_strategy: replace
 ui:
   bundle:
     url: https://github.com/assertj/antora-ui/releases/latest/download/ui-bundle.zip

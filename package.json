@@ -1,7 +1,8 @@
 {
   "name": "docs.assertj.dev",
   "scripts": {
-    "build": "npx antora antora-playbook.yml --log-level=info --clean --fetch --stacktrace"
+    "build": "npx antora antora-playbook.yml --log-level=info --clean --fetch --stacktrace",
+    "test": "node --test"
   },
   "devDependencies": {
     "antora": "3.2.3"
