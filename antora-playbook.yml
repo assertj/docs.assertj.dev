@@ -19,9 +19,9 @@ content:
         - home
         - assertj-joda-time
         - assertj-swing
-    - url: https://github.com/marcphilipp/assertj
+    - url: https://github.com/assertj/assertj
       branches:
-        - antora-3.x-javadoc
+        - 3.x
       start_paths: assertj-*/src/docs/antora
     - url: https://github.com/marcphilipp/assertj-db
       branches:
